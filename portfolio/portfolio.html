@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home -->
+
+    <section id="home">
+        <div class="main">
+            <h1 class="headings">Hello Everybody!
+                <br>I AM <br> DIVYA PAWAR
+            </h1>
+        </div>
+    </section>
+
+    <!-- about -->
+
+    <section id="about">
+        <h1 class="h">ABOUT ME</h1>
+        <div id="pic">
+            <div class="w3-content w3-section" style="max-width:500px">
+                <img class="mySlides" src="img_1.jpg" style="width: 100%; height: 200px;">
+                <img class="mySlides" src="img_3.jpg" style="width:100%; height: 200px;">
+                <img class="mySlides" src="img_6.jpg" style="width:100%; height: 200px;">
+              </div>
+              
+              <script>
+              var myIndex = 0;
+              carousel();
+              
+              function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+              }
+              </script><br>
+            <div id="intro">
+                <h2>Divya Pawar<br>
+                    <span>Student,Developer</span><br>
+                </h2>
+                <p>
+                    Hello beautiful Peoples🤩! How are you all?<br>
+                    I am Divya Pawar.I am a front-end web Developer.<br> I can provide you a perfect designs for your
+                    websites,
+                    clean code and pixel perfect designs.<br>I also make the websites more and more interactive by
+                    animations....
+                    <br>
+                    <br>
+                    <button class="btn btn sm" style=" width: 100px;">Download CV</button>
+                    <button class="btn btn sm" style=" height: 20px; width: 100px;"> More</button><br><br>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+
+    <section id="Projects"><br>
+        <h1 class="h">RECENT PROJECTS</h1>
+        <div class="row">
+            <div class="project-box" style="height: 500px;">
+                <div><img src="img_7.jpg" alt="img" height="50%" width="100%">
+                    <h2 class="project-head">CAFE WEBSITE : </h2>
+                    <P class="para">To make it easy for strangers to find your Cafe.The homepage features the location and opening times details. There are also photos of the restaurant.</P>
+                </div>
+                <button class="btn btn-sm">View More</button>  
+            </div>
+            <div class="project-box">
+                <div><img src="img_8.jpg" alt="img" height="50%" width="100%">
+                    <h2 class="project-head">COURIER MANAGEMENT SYSTEM :</h2>
+                    <P class="para">A courier management system is software that simplifies management and routing. A CMS streamlines all optimizing routes.</P>
+                </div>
+                <button class="btn btn-sm">View More</button>
+            </div>
+            <div class="project-box">
+                <div><img src="img_9.jpg" alt="img" height="50%" width="100%">
+                    <h2 class="project-head">CHATTING APP :</h2>
+                    <P class="para">People do need apps to stay connected not for entertainment but also for business purposes.It is a OS software designed in JAVA using PHP and MYSQL.</P>
+                </div>
+                <button class="btn btn-sm">View More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs By Divya -->
+
+    <section id="blogs">
+        <h1 class="h">BLOGS BY DIVYA</h1>
+        <div class="row">
+            <div class="box">
+                <h2 class="head">🤩Learn HTML- In fun Way!🤩</h2><br>
+                <P class="para">HTML - Hyper Text Markup Language.<br>
+                    The HyperText Markup Language, or HTML is the standard markup language 
+                    for documents designed to be displayed in a web browser. ... 
+                    HTML describes the structure of a web page semantically and originally 
+                    included cues for the appearance of the document. HTML elements are the
+                    building blocks of HTML pages.</P>
+                <button class="btn btn-sm">Show full Article</button>
+            </div>
+            <div class="box">
+                <h2 class="head">🤩Learn CSS - In fun Way!🤩</h2><br>
+                <P class="para">CSS- Cascading Style Sheets.<br> It is a style sheet 
+                    language used for describing the presentation of a document
+                    written in a markup language such as HTML.CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts
+                    CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+                </P><br>
+                <button class="btn btn-sm">Show full Article</button>
+            </div>
+            <div class="box">
+                <h2 class="head">🤩Learn JS - In fun Way!🤩</h2><br>
+                <P class="para">JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. Over 97% of websites use JavaScript on the client side for web page behavior, often incorporating third-party libraries.
+                often just-in-time compiled language that conforms to the ECMAScript standard.
+                </P>
+                <button class="btn btn-sm">Show full Article</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact me -->
+
+    <section id="contact">
+        <h1 class="h">CONTACT ME</h1>
+        <center><img src="img_17.jfif" style="height: 80px; width: 300px;"></center>
+        <form action="" class="form">
+            <input type="text" name="name" class="input" placeholder="Enter Your Name">
+            <input type="email" name="email" class="input" placeholder="Enter Your Email">
+            <textarea name="msg" id="msg" cols="40" rows="4" placeholder="Enter Your Message"></textarea>
+            <button onclick="myFunction()" type="submit" value="SEND" id="send"> SEND</button>
+            <script>
+                function myFunction(){
+                    alert("Your Message have been sent successfully.");
+                }
+            </script>
+        </form>
+        <div class="abc">
+        <h2 style="color: navy;">For More Queries</h2><br>
+        <footer>
+            <a href="www.facebook.com" class="fa fa-facebook"><img src="img_10.png"></a>
+            <a href="www.twitter.com" class="fa fa-twitter"><img src="img_11.png"></a>
+            <a href="www.instagram.com" class="fa fa-instagram"><img src="img13.jpg"></a>
+            <a href="www.linkdein.com" class="fa fa-linkdein"><img src="img12.png"></a>
+        </footer>
+      </div>
+
+    </section>
+
+    <!-- Footer -->
+    
+</body>
+
+</html>
